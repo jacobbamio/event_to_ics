@@ -1,0 +1,2 @@
+icalendar==5.0.5
+streamlit==1.20.0
