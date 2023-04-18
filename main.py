@@ -4,9 +4,10 @@ from datetime import datetime
 
 
 # crear la aplicación de Streamlit
-st.set_page_config(page_title="Event to ics", page_icon="📆")
+st.set_page_config(page_title="Eventastic", page_icon="📆")
 
-st.title('Generador de eventos')
+st.title('Eventastic! 📆')
+st.markdown('*Crea eventos para los miembros de tu comunidad y boostea su productividad!*')
 
 # obtener los detalles del evento del usuario
 
