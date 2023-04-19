@@ -11,6 +11,8 @@ st.markdown('*Crea eventos para los miembros de tu comunidad y boostea su produc
 
 # obtener los detalles del evento del usuario
 
+now = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+
 text_col, date_col = st.columns(2)
 
 with text_col:
@@ -21,9 +23,9 @@ with text_col:
 with date_col:
 
     start_date = st.date_input('Fecha de inicio del evento')
-    start_time = st.time_input('Hora de inicio del evento')
+    start_time = st.time_input('Hora de inicio del evento',now)
     end_date = st.date_input('Fecha de fin del evento')
-    end_time = st.time_input('Hora de fin del evento')
+    end_time = st.time_input('Hora de fin del evento',now)
     loc = st.text_input('Ubicación del evento')
     link = st.text_input('Enlace del evento')
 
