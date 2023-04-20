@@ -52,5 +52,5 @@ archivo_ics = calendario.to_ical()
 # agregar un botón para descargar el archivo .ics
 st.download_button(label='Descargar evento',
                    data=archivo_ics,
-                   file_name='evento.ics',
+                   file_name=f'{name}.ics',
                    mime='text/calendar')
